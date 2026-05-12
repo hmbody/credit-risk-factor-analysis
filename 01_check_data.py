@@ -3,7 +3,7 @@
 """
 import tushare as ts
 
-ts.set_token("f6d9a615b6e9de48f52f24854d8211a36582cd30baf6fc919710d241")
+ts.set_token("你的tushare token")  # 替换为你的token
 pro = ts.pro_api()
 
 print("=" * 60)
