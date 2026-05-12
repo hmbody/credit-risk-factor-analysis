@@ -1,0 +1,37 @@
+房地产行业信用风险因子分析 —— 回归结果
+============================================================
+样本：71 家公司 × 5 年
+模型：双向固定效应（公司 + 年份）
+
+                              OLS Regression Results                              
+==================================================================================
+Dep. Variable:     interest_coverage_w_fe   R-squared:                       0.259
+Model:                                OLS   Adj. R-squared:                  0.240
+Method:                     Least Squares   F-statistic:                     13.82
+Date:                    Tue, 12 May 2026   Prob (F-statistic):           3.24e-17
+Time:                            14:03:18   Log-Likelihood:                -1089.1
+No. Observations:                     325   AIC:                             2196.
+Df Residuals:                         316   BIC:                             2230.
+Df Model:                               8                                         
+Covariance Type:                nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                  6.403e-16      0.388   1.65e-15      1.000      -0.764       0.764
+debt_to_assets_fe         0.0320      0.106      0.301      0.764      -0.177       0.242
+current_ratio_fe          3.6294      1.426      2.545      0.011       0.824       6.435
+roe_fe                   -0.0182      0.038     -0.475      0.635      -0.093       0.057
+roa_fe                    1.4461      0.328      4.408      0.000       0.801       2.092
+assets_turn_fe           13.6869      7.379      1.855      0.065      -0.831      28.205
+grossprofit_margin_fe     0.2944      0.066      4.476      0.000       0.165       0.424
+netprofit_margin_fe       2.8090      3.390      0.829      0.408      -3.860       9.478
+profit_to_gr_fe          -2.8248      3.393     -0.833      0.406      -9.501       3.851
+==============================================================================
+Omnibus:                      212.393   Durbin-Watson:                   2.095
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4050.608
+Skew:                           2.343   Prob(JB):                         0.00
+Kurtosis:                      19.648   Cond. No.                         408.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
